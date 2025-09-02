@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Baseball Compare</title>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+
+    <body>
+        
+        <nav class="header">
+            <a href="index.html">Baseball Compare</a>
+            <a href="batters.html">BATTERS</a>
+            <a href="pitchers.html">PITCHERS</a>
+        </nav>
+
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" id="player1-search" placeholder="Search Player 1">
+                <button onclick="searchPitcher('player1-search', 'p1')">Load Player 1</button>
+            </div>
+
+            <div class="search-box">
+                <input type="text" id="player2-search" placeholder="Search Player 2">
+                <button onclick="searchPitcher('player2-search', 'p2')">Load Player 2</button>
+            </div>
+        </div>
+
+        <div class="comparechart">
+
+            <div class="stat-row">
+                <img id="p1-img" class="player-img">
+                <div></div> <!-- Empty div for spacing -->
+                <img id="p2-img" class="player-img">
+            </div>
+
+            <div class="stat-row stat-header">
+                <div id="p1-name"></div>
+                <div>Stat</div>
+                <div id="p2-name"></div>
+            </div>
+
+            <div class="stat-row">
+                <div id="p1-era"></div>
+                <div>ERA</div>
+                <div id="p2-era"></div>
+            </div>
+            <div class="stat-row">
+                <div id="p1-wins"></div>
+                <div>W</div>
+                <div id="p2-wins"></div>
+            </div>
+            <div class="stat-row">
+                <div id="p1-whip"></div>
+                <div>WHIP</div>
+                <div id="p2-whip"></div>
+            </div>
+            <div class="stat-row">
+                <div id="p1-ip"></div>
+                <div>IP</div>
+                <div id="p2-ip"></div>
+            </div>
+            <div class="stat-row">
+                <div id="p1-ks"></div>
+                <div>Ks</div>
+                <div id="p2-ks"></div>
+            </div>
+            <div class="stat-row">
+                <div id="p1-baa"></div>
+                <div>BAA</div>
+                <div id="p2-baa"></div>
+            </div>
+
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
