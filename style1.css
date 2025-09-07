@@ -4,6 +4,10 @@ body {
     font-family: Arial, Geneva, Tahoma, sans-serif;
 }
 
+body.index {
+    background-color: rgb(29, 147, 220);
+}
+
 nav {
     background-color: rgb(0, 25, 125);
     display: flex;
@@ -20,6 +24,14 @@ nav a {
 
 nav a:hover {
     color: rgb(255, 255, 255);
+}
+
+.description {
+    height: 150px;
+    width: 500px;
+    margin: 0 auto; /* center the content horizontally */
+    color: white;
+    text-align: center;
 }
 
 .player-img {
@@ -60,35 +72,56 @@ nav a:hover {
 }
 
 .search-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;  /* spacing between player 1 & 2 */
-  margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;  /* spacing between player 1 & 2 */
+    margin: 20px 0;
 }
 
 .search-box {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .search-box input {
-  padding: 8px 12px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
 }
 
 .search-box button {
-  padding: 8px 12px;
-  background-color: #0077cc;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 14px;
+    padding: 8px 12px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
 }
 
 .search-box button:hover {
-  background-color: #005fa3;
+    background-color: #005fa3;
+}
+
+.link-button {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 50px;
+}
+
+.link-button button {
+    padding: 12px 12px;
+    background-color: #004598;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.link-button button:hover {
+    background-color: #002e83;
 }
