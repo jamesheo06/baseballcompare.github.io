@@ -108,34 +108,35 @@ function highlightStats() {
 
         // only process if row has 3 cells
         if (cells.length === 3) {
-        const left = parseFloat(cells[0].textContent);
-        const right = parseFloat(cells[2].textContent);
-        const statName = cells[1].textContent.trim().toLowerCase(); // trim removes white space
+            const left = parseFloat(cells[0].textContent);
+            const right = parseFloat(cells[2].textContent);
+            const statName = cells[1].textContent.trim().toLowerCase(); // trim removes white space
 
-        // remove highlights
-        cells[0].classList.remove("highlight");
-        cells[2].classList.remove("highlight");
+            // remove highlights
+            cells[0].classList.remove("highlight");
+            cells[2].classList.remove("highlight");
 
-        if (!isNaN(left) && !isNaN(right)) {
-            let better = "higher";
+            if (!isNaN(left) && !isNaN(right)) {
+                let better = "higher";
 
-            if (["era", "whip", "baa"].includes(statName)) {
-            better = "lower";
+                if (["era", "whip", "baa"].includes(statName)) {
+                    better = "lower";
+                }
+
+                if (better === "higher") {
+                    if (left > right) {
+                        cells[0].classList.add("highlight");
+                    } else if (right > left) {
+                        cells[2].classList.add("highlight");
+                    }
+                } else if (better === "lower") {
+                    if (left < right) {
+                        cells[0].classList.add("highlight");
+                    } else if (right < left) {
+                        cells[2].classList.add("highlight");
+                    }
+                }
             }
-
-            if (better === "higher") {
-            if (left > right) {
-                cells[0].classList.add("highlight");
-            } else if (right > left) {
-                cells[2].classList.add("highlight");
-            }} else if (better === "lower") {
-            if (left < right) {
-                cells[0].classList.add("highlight");
-            } else if (right < left) {
-                cells[2].classList.add("highlight");
-            }
-            }
-        }
         }
     });
 }
