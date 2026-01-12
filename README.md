@@ -1,5 +1,6 @@
 # Baseball Compare
 
+![Baseball Compare Screenshot](BaseballCompareImage.png)
 👉 **[Visit the Website](https://jamesheo06.github.io/baseballcompare.github.io/)**  
 Baseball Compare is a website that allows users to compare MLB players head-to-head using key statistics. Users can search for two players, load their profiles, and instantly view a stat comparison in a clean, easy-to-read layout.  
 
